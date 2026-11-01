@@ -1,0 +1,9 @@
+========== PCSV/run_tema1.m ==========
+========== PCSV/matlab/analizeaza_cadru.m ==========
+========== PCSV/matlab/autocorelatii_23.m ==========
+========== PCSV/matlab/energie_termen_scurt.m ==========
+========== PCSV/matlab/salveaza_grafice.m ==========
+========== PCSV/matlab/selecteaza_ferestre.m ==========
+========== PCSV/matlab/tabel_rezultate.m ==========
+========== PCSV/matlab/varf_fundamental.m ==========
+========== PCSV/matlab/verifica_tema1.m ==========

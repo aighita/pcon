@@ -1,0 +1,20 @@
+Verificare statica efectuata cu MATLAB R2026a mlint -id.
+Cod de iesire: 0. Niciun mesaj de diagnostic pentru cele 15 fisiere.
+Aceasta nu este o executie a programelor sau a testelor MATLAB.
+
+Fisiere analizate:
+PSV/matlab/cai_laborator.m
+PSV/matlab/campbell_robson.m
+PSV/matlab/ex01_filtrare.m
+PSV/matlab/ex02_contrast.m
+PSV/matlab/ex03_mascare.m
+PSV/matlab/ex04_nonindependenta.m
+PSV/matlab/ex05_adaptare.m
+PSV/matlab/ex06_gabor.m
+PSV/matlab/ex07_flash_lag.m
+PSV/matlab/fSin2.m
+PSV/matlab/flash_lag_stimulus.m
+PSV/matlab/salveaza_figura.m
+PSV/matlab/verifica_laborator.m
+PSV/run_laborator.m
+PSV/ex1.m

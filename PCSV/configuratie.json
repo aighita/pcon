@@ -1,0 +1,47 @@
+{
+  "N_referinta": 220,
+  "Fs_referinta": 8000,
+  "f0_min_Hz": 60,
+  "f0_max_Hz": 500,
+  "hop_secunde": 0.01,
+  "numar_ferestre_sonore": 4,
+  "separare_ferestre_secunde": 0.15,
+  "prag_energie_relativ": 0.001,
+  "prag_periodicitate": 0.6,
+  "fisiere": [
+    {
+      "cale": "L1 - marimi pe termen scurt/casa_male1.wav",
+      "m_manual": [
+        3397,
+        29397,
+        51957,
+        53397,
+        57477,
+        102437
+      ]
+    },
+    {
+      "cale": "L1 - marimi pe termen scurt/casa_male2.wav",
+      "m_manual": [
+        9157,
+        20597,
+        23397,
+        31957,
+        37317,
+        57317
+      ]
+    },
+    {
+      "cale": "L1 - marimi pe termen scurt/casa_female.wav",
+      "m_manual": [
+        13957,
+        17237,
+        18437,
+        47637,
+        69077,
+        96437
+      ]
+    }
+  ],
+  "prag_zcr_selectie": 0.16
+}
