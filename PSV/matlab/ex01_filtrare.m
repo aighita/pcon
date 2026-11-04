@@ -1,13 +1,17 @@
 function ex01_filtrare
+
 p = cai_laborator;
-names = {'buildings_original','parrots'};
+names = {'gaudi','zaha'};
+
 for k = 1:numel(names)
     rgb = imread(fullfile(p.images, [names{k} '.bmp']));
+
     g = im2double(rgb2gray(rgb));
     h = fspecial('gaussian', [13 13], 0.8);
     low = imfilter(g, h, 'symmetric', 'conv');
     high = imfilter(g, fspecial('laplacian', 0.2), 'symmetric', 'conv');
     sharp = imsharpen(g, 'Radius', 1, 'Amount', 1);
+
     fig = figure('Name',['Ex. 1 - ' names{k}], 'Color','w');
     tiledlayout(2,2);
     nexttile; imshow(g,[0 1]); title('Original: luminanta');

@@ -1,0 +1,58 @@
+clc; clear; close all;
+
+[y, Fs] = audioread("casa_male1.wav");
+
+t = 0 : 1 / Fs : length(y) / Fs - 1 / Fs;
+
+figure(1)
+plot(t, y)
+xlabel("Timp [s]")
+ylabel("Amplitudine")
+title("Semnal de intrare")
+
+% sound(y, Fs)
+
+figure(2)
+plot(y)
+
+m = 30000;
+N = 220;
+y_sel = y(m - N + 1 : m);
+
+figure(3)
+plot(y_sel)
+
+lambdaMax = 218;
+r1 = acor1(y, m, N, lambdaMax);
+figure(4)
+plot(r1 ./ r1(1))
+
+
+r2 = acor2(y, m, N, lambdaMax);
+figure(5)
+plot(r2 ./ r2(1))
+
+r3 = acor3(y, m, N, lambdaMax);
+figure(6)
+plot(r3 ./ r3(1))
+
+index = 1;
+r_test = r3;
+while (r_test(index) > r_test(index + 1))
+    index = index + 1;
+end
+
+max = r_test(index);
+iMax = index;
+for i = index : length(r_test)
+    if (r_test(i) > max)
+        max = r_test(i);
+        iMax = i;
+    end
+end
+
+Fs / iMax
+
+a = amdf(y, m, N, lambdaMax);
+figure(7)
+plot(a)
