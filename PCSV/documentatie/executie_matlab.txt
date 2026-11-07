@@ -1,5 +1,0 @@
-Comanda incercata: MATLAB R2026a -batch "addpath('PCSV','PCSV/matlab'); verifica_tema1"
-Pornirea a esuat inainte de executarea codului, exit 137.
-Mesaj: Incompatible processor. This Qt build requires the following features: neon.
-Analiza statica separata cu mlint a trecut fara mesaje; vezi analiza_statica_matlab.txt.
-Rezultatele livrate sunt calcule independente Python pe WAV-urile reale, nu exporturi ale unei executii MATLAB.
